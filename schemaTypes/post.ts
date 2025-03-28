@@ -40,6 +40,14 @@ export default defineType({
       of: [{type: 'reference', to: {type: 'category'}}],
     }),
     defineField({
+      name: 'tags',
+      title: 'Tags',
+      type: 'tags',
+      options: {
+        predefinedTags: {label: 'New', value: 'new'},
+      },
+    }),
+    defineField({
       name: 'publishedAt',
       title: 'Published at',
       type: 'datetime',
